@@ -1,17 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
+    <Filter Include="Data">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Файлы заголовков">
+    <Filter Include="Domain">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Файлы ресурсов">
+    <Filter Include="Domain\models">
+      <UniqueIdentifier>{529f11e5-417b-429f-84c3-0fd752e3f1ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Administration">
+      <UniqueIdentifier>{e5fc8abf-9032-447f-a895-e35828013b30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Administration\control_room">
+      <UniqueIdentifier>{9a72c9a9-a13c-454e-a9a4-751ff8409614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Administration\control_room\aircraft">
+      <UniqueIdentifier>{659c20e0-4bae-4007-b20e-2a5d35297dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Administration\manager">
+      <UniqueIdentifier>{a41bc141-bfaf-4833-a1a0-937623faa945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Administration\manager\teams">
+      <UniqueIdentifier>{efd262c3-20f1-4870-b084-1255075ad4f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Internal">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Presentation">
+      <UniqueIdentifier>{a616cba4-5a17-4957-91e8-42d0db4bf112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Money">
+      <UniqueIdentifier>{c26215c4-eccb-4566-8669-650f723edf71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Money\complex">
+      <UniqueIdentifier>{7bc8dfc2-ee7a-4cf9-aed9-2b57137fcc7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Money\complex\parking">
+      <UniqueIdentifier>{b34efb08-631e-4824-8e3d-1895e218e3c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Money\complex\recreation_area">
+      <UniqueIdentifier>{cf9686bb-eb52-4869-9b20-84984a8a39d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Money\complex\customs">
+      <UniqueIdentifier>{6ba8d9e6-b4a3-4606-9dff-f4089553bbbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Money\accounting">
+      <UniqueIdentifier>{5f5bfd73-0868-4e68-914e-db7114e59cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files">
+      <UniqueIdentifier>{c8f07945-078f-409a-96e9-ee37a40ec155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files\file_manager">
+      <UniqueIdentifier>{82cdfca1-3638-40d9-8a1b-31916385a40c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files\file_control_room">
+      <UniqueIdentifier>{b92f12c1-bd3d-4ef1-b44f-2128eb7a62a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Money\complex\shops">
+      <UniqueIdentifier>{fa4fa2b5-17cc-40b7-82e2-b2e786336e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files\file_shops">
+      <UniqueIdentifier>{d4e6cf0f-c12c-48e0-b73e-b3f471557a4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files\file_parking">
+      <UniqueIdentifier>{d8146bd2-1142-4980-ab4c-1a64f74b78b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files\file_customs">
+      <UniqueIdentifier>{01002e26-b806-4231-a20d-0312868f8676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files\file_accounting">
+      <UniqueIdentifier>{3299169c-eec2-4b60-a0fe-f1ba0eb4ed20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation\accounting">
+      <UniqueIdentifier>{6b170aaa-9f76-4cb7-994f-a5804183490b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation\parking">
+      <UniqueIdentifier>{becbc243-5f48-4162-a847-e527147d2975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation\recreation_area">
+      <UniqueIdentifier>{04609754-b28b-4008-9261-65ac92dcce69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation\control_room">
+      <UniqueIdentifier>{6e483f55-0f24-4387-b84a-37f6825fde2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation\aircraft">
+      <UniqueIdentifier>{9e4ae35a-ea03-4888-a636-78b45a7e25cf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
