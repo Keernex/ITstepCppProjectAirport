@@ -67,19 +67,19 @@
     <Filter Include="Domain\models\Accounting">
       <UniqueIdentifier>{5f5bfd73-0868-4e68-914e-db7114e59cb2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Domain\models\complex">
+    <Filter Include="Domain\models\Complex">
       <UniqueIdentifier>{2e94ec65-ce8e-4f15-b7e7-a1c980d4bdcd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Domain\models\complex\customs">
+    <Filter Include="Domain\models\Complex\Customs">
       <UniqueIdentifier>{11975c44-dabf-48ac-8684-02fa54a9a4dc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Domain\models\complex\parking">
+    <Filter Include="Domain\models\Complex\Parking">
       <UniqueIdentifier>{2f89c927-dcdc-434c-aa12-0b86980d7cf6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Domain\models\complex\shops">
+    <Filter Include="Domain\models\Complex\Shops">
       <UniqueIdentifier>{eb6fa770-ac1e-43b5-bbfa-c8ec19a519d1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Domain\models\complex\recreation_hall">
+    <Filter Include="Domain\models\Complex\Recreation_hall">
       <UniqueIdentifier>{66c84cfe-d9b4-49bc-abda-e6187a014dda}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -102,17 +102,17 @@
     <ClCompile Include="file_shops.cpp">
       <Filter>Data\Files\file_shops</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
-      <Filter>Domain\models\complex\customs</Filter>
+    <ClCompile Include="customs.cpp">
+      <Filter>Domain\models\Complex\Customs</Filter>
     </ClCompile>
-    <ClCompile Include="Source1.cpp">
-      <Filter>Domain\models\complex\parking</Filter>
+    <ClCompile Include="parking.cpp">
+      <Filter>Domain\models\Complex\Parking</Filter>
     </ClCompile>
-    <ClCompile Include="Source2.cpp">
-      <Filter>Domain\models\complex\shops</Filter>
+    <ClCompile Include="shops.cpp">
+      <Filter>Domain\models\Complex\Shops</Filter>
     </ClCompile>
-    <ClCompile Include="Source3.cpp">
-      <Filter>Domain\models\complex\recreation_hall</Filter>
+    <ClCompile Include="recreation_hall.cpp">
+      <Filter>Domain\models\Complex\Recreation_hall</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -134,17 +134,17 @@
     <ClInclude Include="file_shops.h">
       <Filter>Data\Files\file_shops</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Domain\models\complex\customs</Filter>
+    <ClInclude Include="customs.h">
+      <Filter>Domain\models\Complex\Customs</Filter>
     </ClInclude>
-    <ClInclude Include="Header1.h">
-      <Filter>Domain\models\complex\parking</Filter>
+    <ClInclude Include="parking.h">
+      <Filter>Domain\models\Complex\Parking</Filter>
     </ClInclude>
-    <ClInclude Include="Header2.h">
-      <Filter>Domain\models\complex\shops</Filter>
+    <ClInclude Include="shops.h">
+      <Filter>Domain\models\Complex\Shops</Filter>
     </ClInclude>
-    <ClInclude Include="Header3.h">
-      <Filter>Domain\models\complex\recreation_hall</Filter>
+    <ClInclude Include="recreation_hall.h">
+      <Filter>Domain\models\Complex\Recreation_hall</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

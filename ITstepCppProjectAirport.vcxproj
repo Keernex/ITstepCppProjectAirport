@@ -133,16 +133,16 @@
     <ClCompile Include="file_customs.cpp" />
     <ClCompile Include="file_parking.cpp" />
     <ClCompile Include="file_shops.cpp" />
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Source1.cpp" />
-    <ClCompile Include="Source2.cpp" />
-    <ClCompile Include="Source3.cpp" />
+    <ClCompile Include="customs.cpp" />
+    <ClCompile Include="parking.cpp" />
+    <ClCompile Include="shops.cpp" />
+    <ClCompile Include="recreation_hall.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h" />
-    <ClInclude Include="Header1.h" />
-    <ClInclude Include="Header2.h" />
-    <ClInclude Include="Header3.h" />
+    <ClInclude Include="customs.h" />
+    <ClInclude Include="parking.h" />
+    <ClInclude Include="shops.h" />
+    <ClInclude Include="recreation_hall.h" />
     <ClInclude Include="lib.h" />
     <ClInclude Include="accounting.h" />
     <ClInclude Include="file_accounting.h" />
