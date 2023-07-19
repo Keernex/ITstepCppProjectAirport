@@ -34,35 +34,8 @@
     <Filter Include="Presentation">
       <UniqueIdentifier>{a616cba4-5a17-4957-91e8-42d0db4bf112}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Domain\models\Money">
-      <UniqueIdentifier>{c26215c4-eccb-4566-8669-650f723edf71}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Domain\models\Money\complex">
-      <UniqueIdentifier>{7bc8dfc2-ee7a-4cf9-aed9-2b57137fcc7f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Domain\models\Money\complex\parking">
-      <UniqueIdentifier>{b34efb08-631e-4824-8e3d-1895e218e3c5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Domain\models\Money\complex\recreation_area">
-      <UniqueIdentifier>{cf9686bb-eb52-4869-9b20-84984a8a39d0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Domain\models\Money\complex\customs">
-      <UniqueIdentifier>{6ba8d9e6-b4a3-4606-9dff-f4089553bbbd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Domain\models\Money\accounting">
-      <UniqueIdentifier>{5f5bfd73-0868-4e68-914e-db7114e59cb2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Data\Files">
       <UniqueIdentifier>{c8f07945-078f-409a-96e9-ee37a40ec155}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Data\Files\file_manager">
-      <UniqueIdentifier>{82cdfca1-3638-40d9-8a1b-31916385a40c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Data\Files\file_control_room">
-      <UniqueIdentifier>{b92f12c1-bd3d-4ef1-b44f-2128eb7a62a2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Domain\models\Money\complex\shops">
-      <UniqueIdentifier>{fa4fa2b5-17cc-40b7-82e2-b2e786336e9e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\Files\file_shops">
       <UniqueIdentifier>{d4e6cf0f-c12c-48e0-b73e-b3f471557a4a}</UniqueIdentifier>
@@ -91,5 +64,87 @@
     <Filter Include="Presentation\aircraft">
       <UniqueIdentifier>{9e4ae35a-ea03-4888-a636-78b45a7e25cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Domain\models\Accounting">
+      <UniqueIdentifier>{5f5bfd73-0868-4e68-914e-db7114e59cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\complex">
+      <UniqueIdentifier>{2e94ec65-ce8e-4f15-b7e7-a1c980d4bdcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\complex\customs">
+      <UniqueIdentifier>{11975c44-dabf-48ac-8684-02fa54a9a4dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\complex\parking">
+      <UniqueIdentifier>{2f89c927-dcdc-434c-aa12-0b86980d7cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\complex\shops">
+      <UniqueIdentifier>{eb6fa770-ac1e-43b5-bbfa-c8ec19a519d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\complex\recreation_hall">
+      <UniqueIdentifier>{66c84cfe-d9b4-49bc-abda-e6187a014dda}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="accounting.cpp">
+      <Filter>Domain\models\Accounting</Filter>
+    </ClCompile>
+    <ClCompile Include="file_accounting.cpp">
+      <Filter>Data\Files\file_accounting</Filter>
+    </ClCompile>
+    <ClCompile Include="file_customs.cpp">
+      <Filter>Data\Files\file_customs</Filter>
+    </ClCompile>
+    <ClCompile Include="file_parking.cpp">
+      <Filter>Data\Files\file_parking</Filter>
+    </ClCompile>
+    <ClCompile Include="file_shops.cpp">
+      <Filter>Data\Files\file_shops</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Domain\models\complex\customs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source1.cpp">
+      <Filter>Domain\models\complex\parking</Filter>
+    </ClCompile>
+    <ClCompile Include="Source2.cpp">
+      <Filter>Domain\models\complex\shops</Filter>
+    </ClCompile>
+    <ClCompile Include="Source3.cpp">
+      <Filter>Domain\models\complex\recreation_hall</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib.h">
+      <Filter>Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="accounting.h">
+      <Filter>Domain\models\Accounting</Filter>
+    </ClInclude>
+    <ClInclude Include="file_accounting.h">
+      <Filter>Data\Files\file_accounting</Filter>
+    </ClInclude>
+    <ClInclude Include="file_customs.h">
+      <Filter>Data\Files\file_customs</Filter>
+    </ClInclude>
+    <ClInclude Include="file_parking.h">
+      <Filter>Data\Files\file_parking</Filter>
+    </ClInclude>
+    <ClInclude Include="file_shops.h">
+      <Filter>Data\Files\file_shops</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Domain\models\complex\customs</Filter>
+    </ClInclude>
+    <ClInclude Include="Header1.h">
+      <Filter>Domain\models\complex\parking</Filter>
+    </ClInclude>
+    <ClInclude Include="Header2.h">
+      <Filter>Domain\models\complex\shops</Filter>
+    </ClInclude>
+    <ClInclude Include="Header3.h">
+      <Filter>Domain\models\complex\recreation_hall</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
