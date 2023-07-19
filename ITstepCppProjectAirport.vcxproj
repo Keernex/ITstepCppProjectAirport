@@ -130,7 +130,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="accounting.cpp" />
     <ClCompile Include="file_accounting.cpp" />
-    <ClCompile Include="file_customs.cpp" />
     <ClCompile Include="file_parking.cpp" />
     <ClCompile Include="file_shops.cpp" />
     <ClCompile Include="customs.cpp" />
@@ -146,7 +145,6 @@
     <ClInclude Include="lib.h" />
     <ClInclude Include="accounting.h" />
     <ClInclude Include="file_accounting.h" />
-    <ClInclude Include="file_customs.h" />
     <ClInclude Include="file_parking.h" />
     <ClInclude Include="file_shops.h" />
   </ItemGroup>

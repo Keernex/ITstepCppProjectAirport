@@ -43,9 +43,6 @@
     <Filter Include="Data\Files\file_parking">
       <UniqueIdentifier>{d8146bd2-1142-4980-ab4c-1a64f74b78b6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data\Files\file_customs">
-      <UniqueIdentifier>{01002e26-b806-4231-a20d-0312868f8676}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Data\Files\file_accounting">
       <UniqueIdentifier>{3299169c-eec2-4b60-a0fe-f1ba0eb4ed20}</UniqueIdentifier>
     </Filter>
@@ -93,9 +90,6 @@
     <ClCompile Include="file_accounting.cpp">
       <Filter>Data\Files\file_accounting</Filter>
     </ClCompile>
-    <ClCompile Include="file_customs.cpp">
-      <Filter>Data\Files\file_customs</Filter>
-    </ClCompile>
     <ClCompile Include="file_parking.cpp">
       <Filter>Data\Files\file_parking</Filter>
     </ClCompile>
@@ -124,9 +118,6 @@
     </ClInclude>
     <ClInclude Include="file_accounting.h">
       <Filter>Data\Files\file_accounting</Filter>
-    </ClInclude>
-    <ClInclude Include="file_customs.h">
-      <Filter>Data\Files\file_customs</Filter>
     </ClInclude>
     <ClInclude Include="file_parking.h">
       <Filter>Data\Files\file_parking</Filter>
