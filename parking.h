@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "file_parking.h"
 
 
 struct Parking
@@ -7,8 +7,10 @@ struct Parking
 	int occupied_parking_spaces;
 	int land_rent;
 
+	FileParking fileparking;
+
 	Parking();
-	Parking(int parking_spaces);
+	void input_parking_spaces(int parking_spaces);
 	void print_parking();
 };
 
