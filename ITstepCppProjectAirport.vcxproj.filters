@@ -15,18 +15,6 @@
     <Filter Include="Domain\models\Administration">
       <UniqueIdentifier>{e5fc8abf-9032-447f-a895-e35828013b30}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Domain\models\Administration\control_room">
-      <UniqueIdentifier>{9a72c9a9-a13c-454e-a9a4-751ff8409614}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Domain\models\Administration\control_room\aircraft">
-      <UniqueIdentifier>{659c20e0-4bae-4007-b20e-2a5d35297dc9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Domain\models\Administration\manager">
-      <UniqueIdentifier>{a41bc141-bfaf-4833-a1a0-937623faa945}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Domain\models\Administration\manager\teams">
-      <UniqueIdentifier>{efd262c3-20f1-4870-b084-1255075ad4f5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Internal">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -79,6 +67,21 @@
     <Filter Include="Domain\models\Complex\Recreation_hall">
       <UniqueIdentifier>{66c84cfe-d9b4-49bc-abda-e6187a014dda}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Domain\models\Administration\Managers">
+      <UniqueIdentifier>{a41bc141-bfaf-4833-a1a0-937623faa945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Administration\Managers\teams">
+      <UniqueIdentifier>{efd262c3-20f1-4870-b084-1255075ad4f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Administration\Control_room">
+      <UniqueIdentifier>{9a72c9a9-a13c-454e-a9a4-751ff8409614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\models\Administration\Control_room\aircraft">
+      <UniqueIdentifier>{659c20e0-4bae-4007-b20e-2a5d35297dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files\file_managers">
+      <UniqueIdentifier>{5c3350a3-10f6-4b9e-a248-bf0c5cc26da3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -108,6 +111,12 @@
     <ClCompile Include="recreation_hall.cpp">
       <Filter>Domain\models\Complex\Recreation_hall</Filter>
     </ClCompile>
+    <ClCompile Include="managers.cpp">
+      <Filter>Domain\models\Administration\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="file_managers.cpp">
+      <Filter>Data\Files\file_managers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib.h">
@@ -136,6 +145,12 @@
     </ClInclude>
     <ClInclude Include="recreation_hall.h">
       <Filter>Domain\models\Complex\Recreation_hall</Filter>
+    </ClInclude>
+    <ClInclude Include="managers.h">
+      <Filter>Domain\models\Administration\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="file_managers.h">
+      <Filter>Data\Files\file_managers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -136,9 +136,13 @@
     <ClCompile Include="parking.cpp" />
     <ClCompile Include="shops.cpp" />
     <ClCompile Include="recreation_hall.cpp" />
+    <ClCompile Include="managers.cpp" />
+    <ClCompile Include="file_managers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="customs.h" />
+    <ClInclude Include="file_managers.h" />
+    <ClInclude Include="managers.h" />
     <ClInclude Include="parking.h" />
     <ClInclude Include="shops.h" />
     <ClInclude Include="recreation_hall.h" />
