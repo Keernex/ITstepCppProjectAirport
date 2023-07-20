@@ -73,6 +73,70 @@ void main()
 	//		break;
 	//	}
 	//} while (true);
+	FileManagers file_managers;
+	Managers managers_funk;
+	vector<Managers> managers;
+	int count = 0;
+	file_managers.load_manager(managers, count);
+	do
+	{
+		int q = 0;
+		cout << "Enter number: ";
+		cin >> q;
+		if (q == 1)
+		{
+			if (managers.size() == 0)
+			{
+				cout << "Enter count: ";
+				cin >> count;
+				managers.resize(count);
+				for (int i = 0; i < count; i++)
+				{
+					managers[i].input_manager(i);
+				}
+			}
+			else
+			{
+				cout << "How many employees do you want to add?" << endl;
+				cout << "Enter count: ";
+				int add_count;
+				cin >> add_count;
+				managers.resize(count + add_count);
+				for (int i = count; i < count + add_count; i++)
+				{
+					managers[i].input_manager(i);
+				}count = managers.size();
+			}
+			file_managers.save_manager(managers, count);
+		}
+		if (q == 2)
+		{
+			int index;
+			cout << "Enter index: ";
+			cin >> index;
+			managers = managers_funk.redaction_manager_index(index, managers);
+			file_managers.save_manager(managers, count);
+		}
+		if (q == 3)
+		{
+			for (int i = 0; i < count; i++)
+			{
+				managers[i].print_manager(i);
+			}
+		}
+		if (q == 4)
+		{
+			managers_funk.search_manager_name(managers);
+		}
+		if (q == 5)
+		{
+			managers = managers_funk.remove_manager(managers);
+		}
+		if (q == 6)
+		{
+			break;
+		}
+	} while (true);
 }
 
 

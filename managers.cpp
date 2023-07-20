@@ -2,16 +2,7 @@
 
 Managers::Managers()
 {
-	srand(time(0));
-	int t = rand() % 10 + 1;
-	if (t != 7)
-	{
-		ready_work = true;
-	}
-	else
-	{
-		ready_work = false;
-	}
+	ready_work = true;
 }
 
 void Managers::input_manager(int index)
@@ -24,7 +15,6 @@ void Managers::input_manager(int index)
 	cin >> surname;
 	cout << "Input age manager: ";
 	cin >> age;
-
 	ready_work = true;
 	salary = 500;
 }
@@ -83,7 +73,7 @@ vector<Managers> Managers::remove_manager(vector<Managers> managers)
 {
 	cout << endl;
 	int index;
-	cout << "Enter index: ";
+	cout << "Remove manager index: ";
 	cin >> index;
 	if (index >= 0 && index < managers.size())
 	{
