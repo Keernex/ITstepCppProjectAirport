@@ -82,6 +82,15 @@
     <Filter Include="Data\Files\file_managers">
       <UniqueIdentifier>{5c3350a3-10f6-4b9e-a248-bf0c5cc26da3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Domain\Use_case">
+      <UniqueIdentifier>{8dfce935-aa65-4193-a412-d31f18fcc35a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files\file_control_room">
+      <UniqueIdentifier>{667838f3-e20a-4ac0-a5af-59f7505ccc0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Files\file_teams">
+      <UniqueIdentifier>{65ba2414-2008-42cf-bee0-09d54c2a16c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -117,6 +126,21 @@
     <ClCompile Include="file_managers.cpp">
       <Filter>Data\Files\file_managers</Filter>
     </ClCompile>
+    <ClCompile Include="Use_case.cpp">
+      <Filter>Domain\Use_case</Filter>
+    </ClCompile>
+    <ClCompile Include="control_room.cpp">
+      <Filter>Domain\models\Administration\Control_room</Filter>
+    </ClCompile>
+    <ClCompile Include="file_control_room.cpp">
+      <Filter>Data\Files\file_control_room</Filter>
+    </ClCompile>
+    <ClCompile Include="teams.cpp">
+      <Filter>Domain\models\Administration\Managers\teams</Filter>
+    </ClCompile>
+    <ClCompile Include="file_teams.cpp">
+      <Filter>Data\Files\file_teams</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib.h">
@@ -151,6 +175,21 @@
     </ClInclude>
     <ClInclude Include="file_managers.h">
       <Filter>Data\Files\file_managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Use_case.h">
+      <Filter>Domain\Use_case</Filter>
+    </ClInclude>
+    <ClInclude Include="control_room.h">
+      <Filter>Domain\models\Administration\Control_room</Filter>
+    </ClInclude>
+    <ClInclude Include="file_control_room.h">
+      <Filter>Data\Files\file_control_room</Filter>
+    </ClInclude>
+    <ClInclude Include="teams.h">
+      <Filter>Domain\models\Administration\Managers\teams</Filter>
+    </ClInclude>
+    <ClInclude Include="file_teams.h">
+      <Filter>Data\Files\file_teams</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -138,10 +138,20 @@
     <ClCompile Include="recreation_hall.cpp" />
     <ClCompile Include="managers.cpp" />
     <ClCompile Include="file_managers.cpp" />
+    <ClCompile Include="control_room.cpp" />
+    <ClCompile Include="file_control_room.cpp" />
+    <ClCompile Include="file_teams.cpp" />
+    <ClCompile Include="teams.cpp" />
+    <ClCompile Include="Use_case.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="customs.h" />
     <ClInclude Include="file_managers.h" />
+    <ClInclude Include="control_room.h" />
+    <ClInclude Include="file_control_room.h" />
+    <ClInclude Include="file_teams.h" />
+    <ClInclude Include="teams.h" />
+    <ClInclude Include="Use_case.h" />
     <ClInclude Include="managers.h" />
     <ClInclude Include="parking.h" />
     <ClInclude Include="shops.h" />
