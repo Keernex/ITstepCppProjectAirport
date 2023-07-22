@@ -28,8 +28,11 @@ void main()
 
 	Teams funk_teams;
 	string file_teams = "teams.bin";
+	string file_busy_teams = "busy_teams.bin";
 	vector<Teams> teams;
+	vector<Teams> busy_teams;
 	int count_teams = 0;
+	int count_busy_teams = 0;
 	
 
 	Parking funk_parking;
@@ -391,10 +394,11 @@ void main()
 								cout << "1 - watch Control rooms" << endl;
 								cout << "2 - watch Teams" << endl;
 								cout << "3 - watch Aircrafts" << endl;
+								cout << "4 - watch busy Teams" << endl;
 
-								cout << "4 - manage flights" << endl;
+								cout << "5 - manage flights" << endl;
 
-								cout << "5 - go to Managers" << endl;
+								cout << "6 - go to Managers" << endl;
 
 								int select;
 								cout << "(Control rooms) input number: ";
@@ -425,6 +429,13 @@ void main()
 								}
 								if (select == 4)
 								{
+									for (int i = 0; i < busy_teams.size(); i++)
+									{
+										busy_teams[i].print_teams(i);
+									}
+								}
+								if (select == 5)
+								{
 									cout << "You need to send teams to the planes" << endl;
 									if (count_teams >= funk_aircrafts.number_aircrafts)
 									{
@@ -442,6 +453,21 @@ void main()
 										}
 										if (select == 1)
 										{
+											for (int i = 0; i < funk_aircrafts.number_aircrafts; i++)
+											{
+												funk_teams.remove_teams(teams,i);
+											}count_teams = teams.size();
+											file_all_functions.save_elements(teams, count_teams, file_teams);
+
+											
+											busy_teams.resize(funk_aircrafts.number_aircrafts);
+											for (int i = 0; i < funk_aircrafts.number_aircrafts; i++)
+											{
+												busy_teams[i].input_busy_teams(i);
+											}count_busy_teams = busy_teams.size();
+											file_all_functions.save_elements(busy_teams, count_busy_teams, file_busy_teams);
+
+
 											funk_aircrafts.remove_aircrafts();
 										}
 										if (select == 2)
@@ -454,7 +480,7 @@ void main()
 										cout << "Hire more teams" << endl;
 									}
 								}
-								if (select == 5)
+								if (select == 6)
 								{
 									break;
 								}

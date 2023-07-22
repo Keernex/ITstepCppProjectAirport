@@ -14,6 +14,14 @@ void Teams::input_teams(int index)
 	money = 2500;
 }
 
+void Teams::input_busy_teams(int index)
+{
+	cout << "Team index: " << index << endl;
+	cout << endl;
+	ready_work = false;
+	money = 2500;
+}
+
 void Teams::print_teams(int index)
 {
 	cout << "Team index: " << index << endl;
