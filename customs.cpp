@@ -1,18 +1,14 @@
 #include "customs.h"
 
-Customs::Customs()
+void Customs::input_customs(int occupied_spaces)
 {
-	number_people = 0;
-	money = 5000;
-}
-
-Customs::Customs(int number_people)
-{
-	this->number_people = number_people;
+	number_people = occupied_spaces * 4;
+	money = number_people * 50;
 }
 
 void Customs::print_customs()
 {
-	cout << "Number of people at customs: " << number_people << endl;
 	cout << endl;
+	cout << "Customs people: " << number_people << endl;
+	cout << "Damages: " << money << endl;
 }

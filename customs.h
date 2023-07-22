@@ -6,8 +6,7 @@ struct Customs
 	int number_people;
 	int money;
 
-	Customs();
-	Customs(int number_people);
+	void input_customs(int occupied_spaces);
 	void print_customs();
 };
 

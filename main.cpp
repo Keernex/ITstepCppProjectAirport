@@ -1,9 +1,4 @@
-#include "parking.h"
-#include "file_shops.h"
-#include "file_managers.h"
-#include "file_teams.h"
-#include "aircraft.h"
-
+#include "file_all_functions.h"
 
 void main()
 {
@@ -285,6 +280,155 @@ void main()
 	//		break;
 	//	}
 	//} while (true);
+	FileAllFunctions file_all_functions;
+	
+	
+	
+	Accounting funk_accounting;
+	string file_accounting = "accounting.bin";
+	vector<Accounting> accounting;
+
+
+	Managers funk_managers;
+	string file_managers = "managers.bin";
+	vector<Managers> managers;
+
+	ControlRooms funk_control_rooms;
+	string file_control_rooms = "rooms.bin";
+	vector<ControlRooms> rooms;
+
+
+	Aircrafts funk_aircrafts;
+	string file_aircrafts = "aircrafts.bin";
+	vector<Aircrafts> aircrafts;
+
+	Teams funk_teams;
+	string file_teams = "teams.bin";
+	vector<Teams> teams;
+
+	
+	Parking funk_parking;
+	string file_parking = "parking.bin";
+	vector<Parking> parking;
+
+	Shops funk_shops;
+	string file_shops = "shops.bin";
+	vector<Shops> shops;
+
+	Customs funk_customs;
+	string file_customs = "customs.bin";
+	vector<Customs> customs;
+
+	RecreationHall funk_recreation_hall;
+	string file_recreation_hall = "recreationhall.bin";
+	vector<RecreationHall> recreationhall;
+
+
+	do
+	{
+		cout << "1  - watch Accounting" << endl;
+		cout << "2  - watch Parking" << endl;
+		cout << "3  - watch Shops" << endl;
+		cout << "4  - watch Customs" << endl;
+		cout << "5  - watch Recreation Hall" << endl;
+
+		cout << "6  - watch Managers" << endl;
+
+		cout << "7 - go to Managers" << endl;
+		cout << "8 - The day will end" << endl;
+
+		int select;
+		cout << "(Owner) input number: ";
+		while (!(std::cin >> select) || select < 1 || select > 8)
+		{
+			cin.clear();
+			while (cin.get() != '\n')
+				continue;
+		}
+		if (select == 1)
+		{
+			funk_accounting.print_accounting();
+		}
+		if (select == 2)
+		{
+			cout << "1  - input number seats" << endl;
+			cout << "2  - print Parking" << endl;
+			cout << "3  - end" << endl;
+			do
+			{
+				int select;
+				cout << "(Owner) input number: ";
+				while (!(std::cin >> select) || select < 1 || select > 3)
+				{
+					cin.clear();
+					while (cin.get() != '\n')
+						continue;
+				}
+				if (select == 1)
+				{
+					funk_parking.input_spaces();
+					file_all_functions.save_element(funk_parking.spaces, file_parking);
+				}
+				if (select == 2)
+				{
+					funk_parking.print_spaces();
+				}
+				if (select == 3)
+				{
+					break;
+				}
+			} while (true);
+		}
+		if (select == 3)
+		{
+			for (int i = 0; i < 10; i++)
+			{
+				shops[i].print_shop(i);
+			}
+		}
+		if (select == 4)
+		{
+			funk_customs.print_customs();
+		}
+		if (select == 5)
+		{
+			funk_recreation_hall.print_recreation_hall();
+		}
+		if (select == 6)
+		{
+			do
+			{
+				cout << "1  - input Managers" << endl;
+				cout << "2  - print Managers" << endl;
+				cout << "3  - search Managers" << endl;
+				cout << "4  - redaction Managers" << endl;
+				cout << "5 - remove Managers" << endl;
+				cout << "6 - end" << endl;
+
+				int select;
+				cout << "(Owner) input number: ";
+				while (!(std::cin >> select) || select < 1 || select > 6)
+				{
+					cin.clear();
+					while (cin.get() != '\n')
+						continue;
+				}
+				if (select == 1)
+
+			} while (true);
+		}
+	} while (true);
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+	
 }
 
 

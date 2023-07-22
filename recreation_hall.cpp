@@ -1,18 +1,14 @@
 #include "recreation_hall.h"
 
-RecreationHall::RecreationHall()
+void RecreationHall::input_recreation_hall(int occupied_spaces)
 {
-	number_people = 0;
-	money = 5000;
-}
-
-RecreationHall::RecreationHall(int number_people)
-{
-	this->number_people = number_people;
+	number_people = occupied_spaces * 4;
+	money = number_people * 5;
 }
 
 void RecreationHall::print_recreation_hall()
 {
-	cout << "Number of people at recreation hall: " << number_people << endl;
 	cout << endl;
+	cout << "Recreation hall people: " << number_people << endl;
+	cout << "Damages: " << money << endl;
 }

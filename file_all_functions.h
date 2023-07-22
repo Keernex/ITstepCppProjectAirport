@@ -1,3 +1,7 @@
+#include "lib.h"
+
+#include "accounting.h"
+
 #include "managers.h"
 #include "control_room.h"
 

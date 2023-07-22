@@ -1,16 +1,15 @@
-#include "file_parking.h"
+#include "lib.h"
 
 
 struct Parking
 {
 	int spaces;
-	int occupied_spaces;
 	int money;
-
-	FileParking fileparking;
+	int occupied_spaces;
 
 	Parking();
 	void input_spaces();
+	void random_spaces();
 	void print_spaces();
 };
 

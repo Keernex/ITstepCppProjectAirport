@@ -76,25 +76,25 @@
     <Filter Include="Data\Files\file_all_functions">
       <UniqueIdentifier>{2531402a-e274-47eb-98ea-2226c86990cd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data\Files\treh">
+    <Filter Include="Data\Files\del">
       <UniqueIdentifier>{693bc32b-2c0e-44f6-b1e8-30b09194fab1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data\Files\treh\file_accounting">
+    <Filter Include="Data\Files\del\file_accounting">
       <UniqueIdentifier>{3299169c-eec2-4b60-a0fe-f1ba0eb4ed20}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data\Files\treh\file_control_room">
+    <Filter Include="Data\Files\del\file_control_room">
       <UniqueIdentifier>{667838f3-e20a-4ac0-a5af-59f7505ccc0b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data\Files\treh\file_managers">
+    <Filter Include="Data\Files\del\file_managers">
       <UniqueIdentifier>{5c3350a3-10f6-4b9e-a248-bf0c5cc26da3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data\Files\treh\file_parking">
+    <Filter Include="Data\Files\del\file_parking">
       <UniqueIdentifier>{d8146bd2-1142-4980-ab4c-1a64f74b78b6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data\Files\treh\file_shops">
+    <Filter Include="Data\Files\del\file_shops">
       <UniqueIdentifier>{d4e6cf0f-c12c-48e0-b73e-b3f471557a4a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data\Files\treh\file_teams">
+    <Filter Include="Data\Files\del\file_teams">
       <UniqueIdentifier>{65ba2414-2008-42cf-bee0-09d54c2a16c1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -106,13 +106,13 @@
       <Filter>Domain\models\Accounting</Filter>
     </ClCompile>
     <ClCompile Include="file_accounting.cpp">
-      <Filter>Data\Files\treh\file_accounting</Filter>
+      <Filter>Data\Files\del\file_accounting</Filter>
     </ClCompile>
     <ClCompile Include="file_parking.cpp">
-      <Filter>Data\Files\treh\file_parking</Filter>
+      <Filter>Data\Files\del\file_parking</Filter>
     </ClCompile>
     <ClCompile Include="file_shops.cpp">
-      <Filter>Data\Files\treh\file_shops</Filter>
+      <Filter>Data\Files\del\file_shops</Filter>
     </ClCompile>
     <ClCompile Include="customs.cpp">
       <Filter>Domain\models\Complex\Customs</Filter>
@@ -130,7 +130,7 @@
       <Filter>Domain\models\Administration\Managers</Filter>
     </ClCompile>
     <ClCompile Include="file_managers.cpp">
-      <Filter>Data\Files\treh\file_managers</Filter>
+      <Filter>Data\Files\del\file_managers</Filter>
     </ClCompile>
     <ClCompile Include="Use_case.cpp">
       <Filter>Domain\Use_case</Filter>
@@ -139,13 +139,13 @@
       <Filter>Domain\models\Administration\Control_room</Filter>
     </ClCompile>
     <ClCompile Include="file_control_room.cpp">
-      <Filter>Data\Files\treh\file_control_room</Filter>
+      <Filter>Data\Files\del\file_control_room</Filter>
     </ClCompile>
     <ClCompile Include="teams.cpp">
       <Filter>Domain\models\Administration\Managers\teams</Filter>
     </ClCompile>
     <ClCompile Include="file_teams.cpp">
-      <Filter>Data\Files\treh\file_teams</Filter>
+      <Filter>Data\Files\del\file_teams</Filter>
     </ClCompile>
     <ClCompile Include="aircraft.cpp">
       <Filter>Domain\models\Administration\Control_room\aircraft</Filter>
@@ -162,13 +162,13 @@
       <Filter>Domain\models\Accounting</Filter>
     </ClInclude>
     <ClInclude Include="file_accounting.h">
-      <Filter>Data\Files\treh\file_accounting</Filter>
+      <Filter>Data\Files\del\file_accounting</Filter>
     </ClInclude>
     <ClInclude Include="file_parking.h">
-      <Filter>Data\Files\treh\file_parking</Filter>
+      <Filter>Data\Files\del\file_parking</Filter>
     </ClInclude>
     <ClInclude Include="file_shops.h">
-      <Filter>Data\Files\treh\file_shops</Filter>
+      <Filter>Data\Files\del\file_shops</Filter>
     </ClInclude>
     <ClInclude Include="customs.h">
       <Filter>Domain\models\Complex\Customs</Filter>
@@ -186,7 +186,7 @@
       <Filter>Domain\models\Administration\Managers</Filter>
     </ClInclude>
     <ClInclude Include="file_managers.h">
-      <Filter>Data\Files\treh\file_managers</Filter>
+      <Filter>Data\Files\del\file_managers</Filter>
     </ClInclude>
     <ClInclude Include="Use_case.h">
       <Filter>Domain\Use_case</Filter>
@@ -195,13 +195,13 @@
       <Filter>Domain\models\Administration\Control_room</Filter>
     </ClInclude>
     <ClInclude Include="file_control_room.h">
-      <Filter>Data\Files\treh\file_control_room</Filter>
+      <Filter>Data\Files\del\file_control_room</Filter>
     </ClInclude>
     <ClInclude Include="teams.h">
       <Filter>Domain\models\Administration\Managers\teams</Filter>
     </ClInclude>
     <ClInclude Include="file_teams.h">
-      <Filter>Data\Files\treh\file_teams</Filter>
+      <Filter>Data\Files\del\file_teams</Filter>
     </ClInclude>
     <ClInclude Include="aircraft.h">
       <Filter>Domain\models\Administration\Control_room\aircraft</Filter>
