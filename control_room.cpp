@@ -6,7 +6,7 @@ ControlRooms::ControlRooms()
 	money = 0;
 }
 
-void ControlRooms::input_roosm(int index)
+void ControlRooms::input_rooms(int index)
 {
 	cout << endl;
 	cout << "Room index: " << index << endl;
@@ -30,12 +30,8 @@ void ControlRooms::print_rooms(int index)
 }
 
 
-vector<ControlRooms> ControlRooms::remove_rooms(vector<ControlRooms> rooms)
+vector<ControlRooms> ControlRooms::remove_rooms(vector<ControlRooms> rooms, int index)
 {
-	cout << endl;
-	int index;
-	cout << "Remove rooms index: ";
-	cin >> index;
 	if (index >= 0 && index < rooms.size())
 	{
 		rooms.erase(rooms.begin() + index);

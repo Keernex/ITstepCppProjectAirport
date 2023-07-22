@@ -272,7 +272,7 @@ void main()
 								cout << "(Manager) input count: ";
 								while (!(std::cin >> new_count))
 								{
-									cout << "(Manager) input number: ";
+									cout << "(Manager) input count: ";
 									cin.clear();
 									while (cin.get() != '\n')
 										continue;
@@ -338,7 +338,7 @@ void main()
 								cout << "(Manager) input count: ";
 								while (!(std::cin >> new_count))
 								{
-									cout << "(Manager) input number: ";
+									cout << "(Manager) input count: ";
 									cin.clear();
 									while (cin.get() != '\n')
 										continue;
@@ -353,9 +353,9 @@ void main()
 							}
 							if (select == 2)
 							{
-								for (int i = 0; i < teams.size(); i++)
+								for (int i = 0; i < rooms.size(); i++)
 								{
-									teams[i].print_teams(i);
+									rooms[i].print_rooms(i);
 								}
 							}
 							if (select == 3)
@@ -369,9 +369,9 @@ void main()
 									while (cin.get() != '\n')
 										continue;
 								}
-								funk_teams.remove_teams(teams, index);
-								count_teams--;
-								file_all_functions.save_elements(teams, count_teams, file_teams);
+								funk_control_rooms.remove_rooms(rooms, index);
+								count_rooms--;
+								file_all_functions.save_elements(rooms, count_rooms, file_control_rooms);
 							}
 							if (select == 4)
 							{
