@@ -12,8 +12,8 @@ struct Managers
 	void input_managers(int index);
 	void print_managers(int index);
 	void search_managers(vector<Managers> managers);
-	vector<Managers> redaction_managers(vector<Managers> managers);
-	vector<Managers> remove_managers(vector<Managers> managers);
+	vector<Managers> redaction_managers(vector<Managers> managers, int index);
+	vector<Managers> remove_managers(vector<Managers> managers, int index);
 };
 
 

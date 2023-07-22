@@ -31,12 +31,8 @@ void Teams::print_teams(int index)
 }
 
 
-vector<Teams> Teams::remove_teams(vector<Teams> teams)
+vector<Teams> Teams::remove_teams(vector<Teams> teams, int index)
 {
-	cout << endl;
-	int index;
-	cout << "Remove teams index: ";
-	cin >> index;
 	if (index >= 0 && index < teams.size())
 	{
 		teams.erase(teams.begin() + index);

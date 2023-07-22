@@ -64,11 +64,8 @@ void Managers::search_managers(vector<Managers> managers)
 	}
 }
 
-vector<Managers> Managers::redaction_managers(vector<Managers> managers)
+vector<Managers> Managers::redaction_managers(vector<Managers> managers, int index)
 {
-	int index;
-	cout << "Input index manager: ";
-	cin >> index;
 	cout << endl;
 	cout << "Manager index: " << index << endl;
 	cout << "Enter new name: ";
@@ -80,12 +77,8 @@ vector<Managers> Managers::redaction_managers(vector<Managers> managers)
 	return managers;
 }
 
-vector<Managers> Managers::remove_managers(vector<Managers> managers)
+vector<Managers> Managers::remove_managers(vector<Managers> managers,int index)
 {
-	cout << endl;
-	int index;
-	cout << "Remove manager index: ";
-	cin >> index;
 	if (index >= 0 && index < managers.size())
 	{
 		managers.erase(managers.begin() + index);
