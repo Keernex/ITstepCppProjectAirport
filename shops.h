@@ -4,7 +4,7 @@
 struct Shops
 {
 	string name_shop;
-	int profit_shop;
+	int money;
 
 	void input_shop(int index);
 	vector<Shops> redaction_shop_index(int index, vector<Shops> shops);

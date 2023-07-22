@@ -4,6 +4,7 @@
 struct Customs
 {
 	int number_people;
+	int money;
 
 	Customs();
 	Customs(int number_people);

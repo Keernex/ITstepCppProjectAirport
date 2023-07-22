@@ -3,6 +3,7 @@
 RecreationHall::RecreationHall()
 {
 	number_people = 0;
+	money = 5000;
 }
 
 RecreationHall::RecreationHall(int number_people)

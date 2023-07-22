@@ -5,7 +5,7 @@ Managers::Managers()
 	ready_work = true;
 }
 
-void Managers::input_manager(int index)
+void Managers::input_managers(int index)
 {
 	cout << endl;
 	cout << "Manager index: " << index << endl;
@@ -16,23 +16,10 @@ void Managers::input_manager(int index)
 	cout << "Input age manager: ";
 	cin >> age;
 	ready_work = true;
-	salary = 500;
+	money = 500;
 }
 
-vector<Managers> Managers::redaction_manager_index(int index, vector<Managers> managers)
-{
-	cout << endl;
-	cout << "Manager index: " << index << endl;
-	cout << "Enter new name: ";
-	cin >> managers[index].name;
-	cout << "Enter new surname: ";
-	cin >> managers[index].surname;
-	cout << "Enter new age: ";
-	cin >> managers[index].age;
-	return managers;
-}
-
-void Managers::print_manager(int index)
+void Managers::print_managers(int index)
 {
 	cout << endl;
 	cout << "Manager index: " << index << endl;
@@ -40,13 +27,17 @@ void Managers::print_manager(int index)
 	cout << "Surname manager: " << surname << endl;
 	cout << "Age manager: " << age << endl;
 	if (ready_work)
-	{cout << "Ready work manager: " << "Ready" << endl;}
+	{
+		cout << "Ready work manager: " << "Ready" << endl;
+	}
 	else
-	{cout << "Ready work manager: " << " No ready" << endl;}
-	cout << "Salary manager: " << salary << endl;
+	{
+		cout << "Ready work manager: " << " No ready" << endl;
+	}
+	cout << "Salary manager: " << money << endl;
 }
 
-void Managers::search_manager_name(vector<Managers> managers)
+void Managers::search_managers(vector<Managers> managers)
 {
 	string surname;
 	cout << "Enter surname manager: ";
@@ -61,15 +52,35 @@ void Managers::search_manager_name(vector<Managers> managers)
 			cout << "Surname manager: " << managers[i].surname << endl;
 			cout << "Age manager: " << managers[i].age << endl;
 			if (managers[i].ready_work)
-			{cout << "Ready work manager: " << "Ready" << endl;}
+			{
+				cout << "Ready work manager: " << "Ready" << endl;
+			}
 			else
-			{cout << "Ready work manager: " << " No ready" << endl;}
-			cout << "Salary manager: " << managers[i].salary << endl;
+			{
+				cout << "Ready work manager: " << " No ready" << endl;
+			}
+			cout << "Salary manager: " << managers[i].money << endl;
 		}
 	}
 }
 
-vector<Managers> Managers::remove_manager(vector<Managers> managers)
+vector<Managers> Managers::redaction_managers(vector<Managers> managers)
+{
+	int index;
+	cout << "Input index manager: ";
+	cin >> index;
+	cout << endl;
+	cout << "Manager index: " << index << endl;
+	cout << "Enter new name: ";
+	cin >> managers[index].name;
+	cout << "Enter new surname: ";
+	cin >> managers[index].surname;
+	cout << "Enter new age: ";
+	cin >> managers[index].age;
+	return managers;
+}
+
+vector<Managers> Managers::remove_managers(vector<Managers> managers)
 {
 	cout << endl;
 	int index;

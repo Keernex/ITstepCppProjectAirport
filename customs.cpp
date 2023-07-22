@@ -3,6 +3,7 @@
 Customs::Customs()
 {
 	number_people = 0;
+	money = 5000;
 }
 
 Customs::Customs(int number_people)

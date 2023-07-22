@@ -141,6 +141,9 @@
     <ClCompile Include="file_teams.cpp">
       <Filter>Data\Files\file_teams</Filter>
     </ClCompile>
+    <ClCompile Include="aircraft.cpp">
+      <Filter>Domain\models\Administration\Control_room\aircraft</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib.h">
@@ -190,6 +193,9 @@
     </ClInclude>
     <ClInclude Include="file_teams.h">
       <Filter>Data\Files\file_teams</Filter>
+    </ClInclude>
+    <ClInclude Include="aircraft.h">
+      <Filter>Domain\models\Administration\Control_room\aircraft</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

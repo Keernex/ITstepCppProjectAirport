@@ -10,10 +10,10 @@ Parking::Parking()
 		parking_spaces = 100;
 	}
 	occupied_parking_spaces = 20 + rand() % (parking_spaces - 20 + 1);
-	land_rent = parking_spaces * 20;
+	money = parking_spaces * 20;
 }
 
-void Parking::input_parking_spaces(int parking_spaces)
+void Parking::input_parking(int parking_spaces)
 {
 	while (true)
 	{
@@ -35,6 +35,6 @@ void Parking::print_parking()
 {
 	cout << "Your parking tickets: " << parking_spaces << endl;
 	cout << "How many parking spaces are occupied: " << occupied_parking_spaces << endl;
-	cout << "How much is the rent: " << land_rent << endl;
+	cout << "How much is the rent: " << money << endl;
 	cout << endl;
 }

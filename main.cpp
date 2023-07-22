@@ -2,6 +2,7 @@
 #include "file_shops.h"
 #include "file_managers.h"
 #include "file_teams.h"
+#include "aircraft.h"
 
 
 void main()
@@ -202,61 +203,88 @@ void main()
 	//		break;
 	//	}
 	//} while (true);
-	FileTeams file_teams;
-	Teams teams_funk;
-	vector<Teams> teams;
-	vector<Teams> all_teams;
-	int all_count = 0;
-	int count = 0;
-	file_teams.load_teams(teams, count);
-	do
-	{
-		cout << "1 - Add team" << endl;
-		cout << "2 - print all team" << endl;
-		cout << "3 - print ready team" << endl;
-		cout << "4 - Remuve team" << endl;
-		cout << "5 - end" << endl;
-		int q = 0;
-		cout << "Enter number: ";
-		cin >> q;
-		if (q == 1)
-		{
-			cout << "How many teams are needed?" << endl;
-			int new_count;
-			cout << "Enter count: ";
-			cin >> new_count;
-			teams.resize(count + new_count);
-			for (int i = count; i < new_count; i++)
-			{
-				teams[i].input_teams(i);
-			}count = count + new_count;
-			file_teams.save_teams(teams, count);
-		}
-		if (q == 2)
-		{
-			for (int i = 0; i < all_count; i++)
-			{
-				all_teams[i].print_teams(i);
-			}
-		}
-		if (q == 3)
-		{
-			for (int i = 0; i < count; i++)
-			{
-				teams[i].print_teams(i);
-			}
-		}
-		if (q == 4)
-		{
-			teams = teams_funk.remove_teams(teams);
-			count--;
-			file_teams.save_teams(teams, count);
-		}
-		if (q == 5)
-		{
-			break;
-		}
-	} while (true);
+	//FileTeams file_teams;
+	//Teams teams_funk;
+	//vector<Teams> teams;
+	//vector<Teams> all_teams;
+	//int all_count = 0;
+	//int count = 0;
+	//file_teams.load_teams(teams, count);
+	//do
+	//{
+	//	cout << "1 - Add team" << endl;
+	//	cout << "2 - print all team" << endl;
+	//	cout << "3 - print ready team" << endl;
+	//	cout << "4 - Remuve team" << endl;
+	//	cout << "5 - end" << endl;
+	//	int q = 0;
+	//	cout << "Enter number: ";
+	//	cin >> q;
+	//	if (q == 1)
+	//	{
+	//		cout << "How many teams are needed?" << endl;
+	//		int new_count;
+	//		cout << "Enter count: ";
+	//		cin >> new_count;
+	//		teams.resize(count + new_count);
+	//		for (int i = count; i < new_count; i++)
+	//		{
+	//			teams[i].input_teams(i);
+	//		}count = count + new_count;
+	//		file_teams.save_teams(teams, count);
+	//	}
+	//	if (q == 2)
+	//	{
+	//		for (int i = 0; i < all_count; i++)
+	//		{
+	//			all_teams[i].print_teams(i);
+	//		}
+	//	}
+	//	if (q == 3)
+	//	{
+	//		for (int i = 0; i < count; i++)
+	//		{
+	//			teams[i].print_teams(i);
+	//		}
+	//	}
+	//	if (q == 4)
+	//	{
+	//		teams = teams_funk.remove_teams(teams);
+	//		count--;
+	//		file_teams.save_teams(teams, count);
+	//	}
+	//	if (q == 5)
+	//	{
+	//		break;
+	//	}
+	//} while (true);
+	//Aircrafts aircrafts;
+	//do
+	//{
+	//	cout << "1 - Order aircrafts" << endl;
+	//	cout << "2 - print aircrafts" << endl;
+	//	cout << "4 - Remuve aircrafts" << endl;
+	//	cout << "5 - end" << endl;
+	//	int q = 0;
+	//	cout << "Enter number: ";
+	//	cin >> q;
+	//	if (q == 1)
+	//	{
+	//		aircrafts.order_aircrafts();
+	//	}
+	//	if (q == 2)
+	//	{
+	//		aircrafts.print_aircrafts();
+	//	}
+	//	if (q == 3)
+	//	{
+	//		aircrafts.remove_aircrafts();
+	//	}
+	//	if (q == 4)
+	//	{
+	//		break;
+	//	}
+	//} while (true);
 }
 
 

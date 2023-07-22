@@ -4,6 +4,7 @@
 struct RecreationHall
 {
 	int number_people;
+	int money;
 
 	RecreationHall();
 	RecreationHall(int number_people);

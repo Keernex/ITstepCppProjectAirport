@@ -1,14 +1,20 @@
 #include "control_room.h"
 
-void ControlRooms::input_control_room(int index)
+ControlRooms::ControlRooms()
+{
+	ready_work = false;
+	money = 0;
+}
+
+void ControlRooms::input_roosm(int index)
 {
 	cout << endl;
 	cout << "Room index: " << index << endl;
 	ready_work = true;
-	salary = 2500;
+	money = 2500;
 }
 
-void ControlRooms::print_control_room(int index)
+void ControlRooms::print_rooms(int index)
 {
 	cout << endl;
 	cout << "Room index: " << index << endl;
@@ -20,11 +26,11 @@ void ControlRooms::print_control_room(int index)
 	{
 		cout << "Ready work room: " << " No ready" << endl;
 	}
-	cout << "Salary room: " << salary << endl;
+	cout << "Salary room: " << money << endl;
 }
 
 
-vector<ControlRooms> ControlRooms::remove_control_room(vector<ControlRooms> rooms)
+vector<ControlRooms> ControlRooms::remove_rooms(vector<ControlRooms> rooms)
 {
 	cout << endl;
 	int index;
@@ -36,3 +42,4 @@ vector<ControlRooms> ControlRooms::remove_control_room(vector<ControlRooms> room
 	}
 	return rooms;
 }
+

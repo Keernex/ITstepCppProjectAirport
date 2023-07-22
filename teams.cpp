@@ -1,11 +1,17 @@
 #include "teams.h"
 
+Teams::Teams()
+{
+	ready_work = false;
+	money = 0;
+}
+
 void Teams::input_teams(int index)
 {
 	cout << "Team index: " << index << endl;
 	cout << endl;
 	ready_work = true;
-	salary = 2500;
+	money = 2500;
 }
 
 void Teams::print_teams(int index)
@@ -20,7 +26,7 @@ void Teams::print_teams(int index)
 	{
 		cout << "Ready work room: " << " No ready" << endl;
 	}
-	cout << "Salary room: " << salary << endl;
+	cout << "Salary room: " << money << endl;
 	cout << endl;
 }
 
