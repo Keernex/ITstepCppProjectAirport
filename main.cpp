@@ -554,6 +554,22 @@ void main()
 			getchar();
 			_getch();
 		} while (true);
+
+		cout << "Do you want to enter?" << endl;
+		cout << "1 - No : 2 - Yes" << endl;
+		int select;
+		cout << "(USER) input number: ";
+		while (!(std::cin >> select) || select < 1 || select > 2)
+		{
+			cout << "(USER) input number: ";
+			cin.clear();
+			while (cin.get() != '\n')
+				continue;
+		}
+		if (select == 1)
+		{
+			break;
+		}
 		getchar();
 		_getch();
 	}while (true);

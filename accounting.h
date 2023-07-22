@@ -18,10 +18,10 @@ struct Accounting
 	int today_total_losses;
 
 	Accounting();
-	void count_all_money();
-	void count_net_profit();
-	void count_today_total_plus();
 	void count_today_total_losses();
+	void count_today_total_plus();
+	void count_net_profit();
+	void count_all_money();
 
 	template<typename T>
 	int counting_money(vector<T> items);
