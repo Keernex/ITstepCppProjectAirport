@@ -8,18 +8,10 @@ Parking::Parking()
 	money = spaces * 20;
 }
 
-void Parking::input_spaces()
+void Parking::input_spaces(int number)
 {
 	srand(time(0));
-	int select;
-	cout << "input select (20 : 100): ";
-	while (!(std::cin >> select) || select > 20 || select < 101)
-	{
-		cin.clear();
-		while (cin.get() != '\n')
-			continue;
-	}
-	spaces = select;
+	spaces = number;
 	int occupied_spaces = 20 + rand() % (spaces - 20 + 1);
 	money = spaces * 20;
 }
@@ -27,7 +19,8 @@ void Parking::input_spaces()
 void Parking::random_spaces()
 {
 	srand(time(0));
-	int occupied_spaces = 20 + rand() % (spaces - 20 + 1);
+	occupied_spaces = 20 + rand() % (spaces - 20 + 1);
+	money = spaces * 20;
 }
 
 void Parking::print_spaces()

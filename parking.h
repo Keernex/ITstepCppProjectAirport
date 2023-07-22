@@ -8,7 +8,7 @@ struct Parking
 	int occupied_spaces;
 
 	Parking();
-	void input_spaces();
+	void input_spaces(int number);
 	void random_spaces();
 	void print_spaces();
 };

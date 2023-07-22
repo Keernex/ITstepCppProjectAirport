@@ -4,20 +4,20 @@ bool FileAllFunctions::Check_file_empty(string filename)
 {
     ifstream file(filename, ios::binary);
 
-    if (!file) {
-        cerr << "Failed to open the file." << endl;
-        return false;
+    if (!file) 
+	{
+        return true;
     }
 
     file.seekg(0, ios::end);
     streampos fileSize = file.tellg();
 
-    if (fileSize == 0) {
-        cout << "The file is empty." << endl;
-        return true;
+    if (fileSize == 0)
+	{
+		return false;
     }
 
-    return false;
+    return true;
 }
 
 template<typename T>
