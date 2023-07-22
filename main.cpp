@@ -25,9 +25,6 @@ void main()
 
 
 	Aircrafts funk_aircrafts;
-	string file_aircrafts = "aircrafts.bin";
-	vector<Aircrafts> aircrafts;
-	int count_aircrafts = 0;
 
 	Teams funk_teams;
 	string file_teams = "teams.bin";
@@ -382,13 +379,93 @@ void main()
 					}
 					if (select == 5)
 					{
+						if (count_rooms < 1)
+						{
+							cout << "You have no managers" << endl;
+							getchar();
+						}
+						else
+						{
+							do
+							{
+								cout << "1 - watch Control rooms" << endl;
+								cout << "2 - watch Teams" << endl;
+								cout << "3 - watch Aircrafts" << endl;
 
+								cout << "4 - manage flights" << endl;
+
+								cout << "5 - go to Managers" << endl;
+
+								int select;
+								cout << "(Control rooms) input number: ";
+								while (!(std::cin >> select) || select < 1 || select > 5)
+								{
+									cout << "(Control rooms) input number: ";
+									cin.clear();
+									while (cin.get() != '\n')
+										continue;
+								}
+								if (select == 1)
+								{
+									for (int i = 0; i < rooms.size(); i++)
+									{
+										rooms[i].print_rooms(i);
+									}
+								}
+								if (select == 2)
+								{
+									for (int i = 0; i < teams.size(); i++)
+									{
+										teams[i].print_teams(i);
+									}
+								}
+								if (select == 3)
+								{
+									funk_aircrafts.print_aircrafts();
+								}
+								if (select == 4)
+								{
+									cout << "You need to send teams to the planes" << endl;
+									if (count_teams >= funk_aircrafts.number_aircrafts)
+									{
+										cout << "You want to send " << funk_aircrafts.number_aircrafts << " teams on " << funk_aircrafts.number_aircrafts << " planes " << endl;
+										cout << "1 - Yes : 2 - No" << endl;
+
+										int select;
+										cout << "(Control rooms) input number: ";
+										while (!(std::cin >> select) || select < 1 || select > 2)
+										{
+											cout << "(Control rooms) input number: ";
+											cin.clear();
+											while (cin.get() != '\n')
+												continue;
+										}
+										if (select == 1)
+										{
+											funk_aircrafts.remove_aircrafts();
+										}
+										if (select == 2)
+										{
+											continue;
+										}
+									}
+									else
+									{
+										cout << "Hire more teams" << endl;
+									}
+								}
+								if (select == 5)
+								{
+									break;
+								}
+								_getch();
+							} while (true);
+						}
 					}
 					if (select == 6)
 					{
 						break;
 					}
-
 					_getch();
 				} while (true);
 			}
