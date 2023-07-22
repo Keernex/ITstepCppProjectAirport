@@ -129,18 +129,12 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="accounting.cpp" />
-    <ClCompile Include="file_accounting.cpp" />
-    <ClCompile Include="file_parking.cpp" />
-    <ClCompile Include="file_shops.cpp" />
     <ClCompile Include="customs.cpp" />
     <ClCompile Include="parking.cpp" />
     <ClCompile Include="shops.cpp" />
     <ClCompile Include="recreation_hall.cpp" />
     <ClCompile Include="managers.cpp" />
-    <ClCompile Include="file_managers.cpp" />
     <ClCompile Include="control_room.cpp" />
-    <ClCompile Include="file_control_room.cpp" />
-    <ClCompile Include="file_teams.cpp" />
     <ClCompile Include="aircraft.cpp" />
     <ClCompile Include="file_all_functions.cpp" />
     <ClCompile Include="teams.cpp" />
@@ -148,10 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="customs.h" />
-    <ClInclude Include="file_managers.h" />
     <ClInclude Include="control_room.h" />
-    <ClInclude Include="file_control_room.h" />
-    <ClInclude Include="file_teams.h" />
     <ClInclude Include="aircraft.h" />
     <ClInclude Include="file_all_functions.h" />
     <ClInclude Include="teams.h" />
@@ -162,9 +153,6 @@
     <ClInclude Include="recreation_hall.h" />
     <ClInclude Include="lib.h" />
     <ClInclude Include="accounting.h" />
-    <ClInclude Include="file_accounting.h" />
-    <ClInclude Include="file_parking.h" />
-    <ClInclude Include="file_shops.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

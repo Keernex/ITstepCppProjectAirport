@@ -562,12 +562,6 @@ void main()
 		funk_accounting.count_all_money();
 		file_all_functions.save_element(funk_accounting.all_money, file_accounting);
 
-
-
-
-
-
-
 		cout << "Do you want to enter?" << endl;
 		cout << "1 - No : 2 - Yes" << endl;
 		int select;
