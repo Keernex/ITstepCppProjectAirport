@@ -142,6 +142,7 @@
     <ClCompile Include="file_control_room.cpp" />
     <ClCompile Include="file_teams.cpp" />
     <ClCompile Include="aircraft.cpp" />
+    <ClCompile Include="file_all_functions.cpp" />
     <ClCompile Include="teams.cpp" />
     <ClCompile Include="Use_case.cpp" />
   </ItemGroup>
@@ -152,6 +153,7 @@
     <ClInclude Include="file_control_room.h" />
     <ClInclude Include="file_teams.h" />
     <ClInclude Include="aircraft.h" />
+    <ClInclude Include="file_all_functions.h" />
     <ClInclude Include="teams.h" />
     <ClInclude Include="Use_case.h" />
     <ClInclude Include="managers.h" />
