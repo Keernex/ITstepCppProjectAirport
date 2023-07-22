@@ -1,6 +1,5 @@
 #include "lib.h"
 
-
 struct Parking
 {
 	int spaces;

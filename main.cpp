@@ -41,7 +41,7 @@ void main()
 	int count_parking = 1;
 
 	Shops funk_shops;
-	vector<Parking> shops;
+	vector<Shops> shops;
 	int count_shops = 10;
 
 	Customs funk_customs;
@@ -75,7 +75,14 @@ void main()
 		{
 			file_all_functions.load_element(funk_parking.spaces, file_parking);
 		}
+
 		funk_parking.random_spaces();
+		for (int i = 0; i < count_shops; i++)
+		{
+			shops[i].input_shop(funk_parking.occupied_spaces);
+		}
+		funk_customs.input_customs(funk_parking.occupied_spaces);
+		funk_recreation_hall.input_recreation_hall(funk_parking.occupied_spaces);
 
 
 		do
@@ -550,17 +557,6 @@ void main()
 		getchar();
 		_getch();
 	}while (true);
-	
-	
-
-	
-	
-	
-	
-	
-	
-
-	
 }
 
 
