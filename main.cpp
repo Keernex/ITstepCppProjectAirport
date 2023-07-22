@@ -555,6 +555,19 @@ void main()
 			_getch();
 		} while (true);
 
+
+		funk_accounting.count_today_total_losses(managers, rooms, busy_teams, teams, funk_customs.money, funk_recreation_hall.money, funk_parking.money);
+		funk_accounting.count_today_total_plus(shops,busy_teams);
+		funk_accounting.count_net_profit();
+		funk_accounting.count_all_money();
+		file_all_functions.save_element(funk_accounting.all_money, file_accounting);
+
+
+
+
+
+
+
 		cout << "Do you want to enter?" << endl;
 		cout << "1 - No : 2 - Yes" << endl;
 		int select;
@@ -566,7 +579,7 @@ void main()
 			while (cin.get() != '\n')
 				continue;
 		}
-		if (select == 1)
+		if (select == 2)
 		{
 			break;
 		}

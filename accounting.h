@@ -18,10 +18,12 @@ struct Accounting
 	int today_total_losses;
 
 	Accounting();
-	void count_today_total_losses();
-	void count_today_total_plus();
+	void count_today_total_losses(vector<Managers> managers, vector<ControlRooms> rooms, vector<Teams> busy_teams, vector<Teams> teams, int customs_money, int recreationhall_money, int parking_money);
+	void count_today_total_plus(vector<Shops> shops, vector<Teams> busy_teams);
 	void count_net_profit();
 	void count_all_money();
+
+	void print_accounting();
 
 	template<typename T>
 	int counting_money(vector<T> items);
