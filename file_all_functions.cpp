@@ -71,7 +71,7 @@ bool FileAllFunctions::save_elements(vector<T> items, int count, string filename
 }
 
 template<typename T>
-bool FileAllFunctions::load_elements(vector<T> items, int& count, string filename)
+bool FileAllFunctions::load_elements(vector<T>& items, int& count, string filename)
 {
 	file.open(filename, ios::in | ios::binary);
 	file.read((char*)&count, sizeof(int));

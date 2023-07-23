@@ -32,7 +32,7 @@ struct FileAllFunctions
 	bool save_elements(vector<T> items, int count, string filename);
 
 	template<typename T>
-	bool load_elements(vector<T> items, int& count, string filename);
+	bool load_elements(vector<T>& items, int& count, string filename);
 };
 
 
