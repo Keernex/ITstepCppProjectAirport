@@ -1,6 +1,19 @@
 #include <conio.h>
 #include "file_all_functions.h"
 
+#include "accounting.h"
+
+#include "managers.h"
+#include "control_room.h"
+
+#include "aircrafts.h"
+#include "teams.h"
+
+#include "customs.h"
+#include "parking.h"
+#include "recreation_hall.h"
+#include "shops.h"
+
 void main()
 {
 	FileAllFunctions file_all_functions;

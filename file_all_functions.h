@@ -1,3 +1,6 @@
+#ifndef FILE_ALL_FUNCTIONS_H
+#define FILE_ALL_FUNCTIONS_H
+
 #include "lib.h"
 
 #include "accounting.h"
@@ -13,8 +16,6 @@
 #include "recreation_hall.h"
 #include "shops.h"
 
-#ifndef FILE_ALL_FUNCTIONS_H
-#define FILE_ALL_FUNCTIONS_H
 
 struct FileAllFunctions
 {
@@ -22,17 +23,34 @@ struct FileAllFunctions
 
 	bool Check_file_empty(string filename);
 
-	template<typename T>
-	bool save_element(T items, string filename);
+	//template<typename T>
+	//bool save_element(T items, string filename);
 
-	template<typename T>
-	bool load_element(T& items, string filename);
+	//template<typename T>
+	//bool load_element(T& items, string filename);
 
-	template<typename T>
-	bool save_elements(vector<T> items, int count, string filename);
+	//template<typename T>
+	//bool save_elements(vector<T> items, int count, string filename);
 
-	template<typename T>
-	bool load_elements(vector<T>& items, int& count, string filename);
+	//template<typename T>
+	//bool load_elements(vector<T>& items, int& count, string filename);
+
+	bool save_elements(vector<Managers> items, int count, string filename);
+	bool load_elements(vector<Managers>& items, int& count, string filename);
+
+	bool save_elements(vector<ControlRooms> items, int count, string filename);
+	bool load_elements(vector<ControlRooms>& items, int& count, string filename);
+
+	bool save_elements(vector<Teams> items, int count, string filename);
+	bool load_elements(vector<Teams>& items, int& count, string filename);
+
+
+	bool save_element(int items, string filename);
+	bool load_element(int& items, string filename);
+
+
+	bool save_element(string items, string filename);
+	bool load_element(string& items, string filename);
 };
 
 
