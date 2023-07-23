@@ -44,6 +44,9 @@ struct FileAllFunctions
 	bool save_elements(vector<Teams> items, int count, string filename);
 	bool load_elements(vector<Teams>& items, int& count, string filename);
 
+	bool save_elements(vector<Shops> items, int count, string filename);
+	bool load_elements(vector<Shops>& items, int& count, string filename);
+
 
 	bool save_element(int items, string filename);
 	bool load_element(int& items, string filename);

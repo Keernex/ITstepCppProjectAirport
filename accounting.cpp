@@ -45,10 +45,10 @@ void Accounting::count_all_money()
 
 void Accounting::print_accounting()
 {
-	cout << "All your money" << all_money << endl;
-	cout << "All your net profit" << net_profit << endl;
-	cout << "All your today total plus" << today_total_plus << endl;
-	cout << "All your today total losses" << today_total_losses << endl;
+	cout << "All your money: " << all_money << endl;
+	cout << "All your net profit: " << net_profit << endl;
+	cout << "All your today total plus: " << today_total_plus << endl;
+	cout << "All your today total losses: " << today_total_losses << endl;
 }
 
 template<typename T>

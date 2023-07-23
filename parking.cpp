@@ -2,7 +2,6 @@
 
 Parking::Parking()
 {
-	srand(time(0));
 	spaces = 100;
 	occupied_spaces = 20 + rand() % (spaces - 20 + 1);
 	money = spaces * 20;
@@ -10,7 +9,6 @@ Parking::Parking()
 
 void Parking::input_spaces(int number)
 {
-	srand(time(0));
 	spaces = number;
 	int occupied_spaces = 20 + rand() % (spaces - 20 + 1);
 	money = spaces * 20;
@@ -18,7 +16,6 @@ void Parking::input_spaces(int number)
 
 void Parking::random_spaces()
 {
-	srand(time(0));
 	occupied_spaces = 20 + rand() % (spaces - 20 + 1);
 	money = spaces * 20;
 }

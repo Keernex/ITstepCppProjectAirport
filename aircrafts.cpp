@@ -9,7 +9,6 @@ Aircrafts::Aircrafts()
 
 void Aircrafts::order_aircrafts()
 {
-	srand(time(0));
 	number_aircrafts = rand() % 10;
 	money = number_aircrafts * 50000;
 	order_status = false;

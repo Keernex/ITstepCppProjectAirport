@@ -8,7 +8,7 @@ bool FileAllFunctions::Check_file_empty(string filename)
 
     if (!file) 
 	{
-        return false;
+        return true;
     }
 
     file.seekg(0, ios::end);
@@ -16,10 +16,10 @@ bool FileAllFunctions::Check_file_empty(string filename)
 
     if (fileSize == 0)
 	{
-		return true;
+		return false;
     }
 
-    return false;
+    return true;
 }
 
 //template<typename T>
@@ -224,6 +224,46 @@ bool FileAllFunctions::load_elements(vector<Teams>& items, int& count, string fi
 	}
 }
 
+bool save_elements(vector<Shops> items, int count, string filename)
+{
+	file.open(filename, ios::out | ios::binary);
+	if (file.is_open())
+	{
+		file.write((char*)&count, sizeof(int));
+		for (size_t i = 0; i < count; i++)
+		{
+			file.write((char*)&items[i], sizeof(Shops));
+		}
+		file.close();
+		cout << "Person was saved..." << endl;
+		return true;
+	}
+	else
+	{
+		cout << "Error opening file!" << endl;
+		return false;
+	}
+}
+bool load_elements(vector<Shops>& items, int& count, string filename)
+{
+	file.open(filename, ios::in | ios::binary);
+	file.read((char*)&count, sizeof(int));
+	items.resize(count);
+	if (file.is_open())
+	{
+		for (size_t i = 0; i < count; i++)
+		{
+			file.read((char*)&items[i], sizeof(Shops));
+		}
+		file.close();
+		return true;
+	}
+	else
+	{
+		cout << "Error opening file!" << endl;
+		return false;
+	}
+}
 
 
 

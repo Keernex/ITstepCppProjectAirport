@@ -53,6 +53,7 @@ void main()
 	int count_parking = 1;
 
 	Shops funk_shops;
+	string file_shops = "shops.bin";
 	vector<Shops> shops;
 	int count_shops = 10;
 
@@ -89,6 +90,7 @@ void main()
 		}
 
 		funk_parking.random_spaces();
+		shops.resize(count_shops);
 		for (int i = 0; i < count_shops; i++)
 		{
 			shops[i].input_shop(funk_parking.occupied_spaces);
@@ -101,13 +103,14 @@ void main()
 
 		do
 		{
-			cout << "1  - watch Accounting" << endl;
-			cout << "2  - change Parking" << endl;
-			cout << "3  - watch Shops" << endl;
-			cout << "4  - watch Customs" << endl;
-			cout << "5  - watch Recreation Hall" << endl;
+			system("cls");
+			cout << "1 - watch Accounting" << endl;
+			cout << "2 - change Parking" << endl;
+			cout << "3 - watch Shops" << endl;
+			cout << "4 - watch Customs" << endl;
+			cout << "5 - watch Recreation Hall" << endl;
 
-			cout << "6  - add Managers" << endl;
+			cout << "6 - add Managers" << endl;
 
 			cout << "7 - go to Managers" << endl;
 			cout << "8 - The day will end" << endl;
@@ -129,11 +132,12 @@ void main()
 			{
 				do
 				{
-					cout << "1  - input number seats" << endl;
-					cout << "2  - print Parking" << endl;
-					cout << "3  - end" << endl;
+					system("cls");
+					cout << "1 - input number seats" << endl;
+					cout << "2 - print Parking" << endl;
+					cout << "3 - end" << endl;
 					int select;
-					cout << "(Owner) input number: ";
+					cout << "(Owner)(Parking) input number: ";
 					while (!(std::cin >> select) || select < 1 || select > 3)
 					{
 						cout << "(Owner) input number: ";
@@ -143,16 +147,16 @@ void main()
 					}
 					if (select == 1)
 					{
-						int number;
-						cout << "(Owner) input number: ";
-						while (!(std::cin >> number) || number < 1 || number > 3)
+						int count;
+						cout << "(Owner)(Parking) input count: ";
+						while (!(std::cin >> count))
 						{
-							cout << "(Owner) input number: ";
+							cout << "(Owner)(Parking) input count: ";
 							cin.clear();
 							while (cin.get() != '\n')
 								continue;
 						}
-						funk_parking.input_spaces(number);
+						funk_parking.input_spaces(count);
 						file_all_functions.save_element(funk_parking.spaces, file_parking);
 					}
 					if (select == 2)
@@ -186,6 +190,7 @@ void main()
 			{
 				do
 				{
+					system("cls");
 					cout << "1 - input Managers" << endl;
 					cout << "2 - print Managers" << endl;
 					cout << "3 - search Managers" << endl;
@@ -194,10 +199,10 @@ void main()
 					cout << "6 - end" << endl;
 
 					int select;
-					cout << "(Owner) input number: ";
+					cout << "(Owner)(Managers) input number: ";
 					while (!(std::cin >> select) || select < 1 || select > 6)
 					{
-						cout << "(Owner) input number: ";
+						cout << "(Owner)(Managers) input number: ";
 						cin.clear();
 						while (cin.get() != '\n')
 							continue;
@@ -205,10 +210,10 @@ void main()
 					if (select == 1)
 					{
 						int new_count;
-						cout << "(Owner) input count: ";
+						cout << "(Owner)(Managers) input count: ";
 						while (!(cin >> new_count))
 						{
-							cout << "(Owner) input count: ";
+							cout << "(Owner)(Managers) input count: ";
 							cin.clear();
 							while (cin.get() != '\n')
 								continue;
@@ -232,32 +237,32 @@ void main()
 					{
 						funk_managers.search_managers(managers);
 					}
-					if (select == 4)
+					if (select == 4 && managers.size() != 0)
 					{
 						int index;
-						cout << "(Owner) Input index manager: ";
-						while (!(cin >> index) || index < count_managers-1 || index > count_managers-1)
+						cout << "(Owner)(Managers) Input index manager: ";
+						while (!(cin >> index) || index < 0 || index > managers.size() - 1)
 						{
-							cout << "(Owner) Input index manager: ";
+							cout << "(Owner)(Managers) Input index manager: ";
 							cin.clear();
 							while (cin.get() != '\n')
 								continue;
 						}
-						funk_managers.redaction_managers(managers,index);
+						managers = funk_managers.redaction_managers(managers,index);
 						file_all_functions.save_elements(managers, count_managers, file_managers);
 					}
-					if (select == 5)
+					if (select == 5 && managers.size() != 0)
 					{
 						int index;
-						cout << "(Owner) Input index manager: ";
-						while (!(cin >> index) || index < count_managers - 1 || index > count_managers - 1)
+						cout << "(Owner)(Managers) Input index manager: ";
+						while (!(cin >> index) || index < 0 || index > managers.size() - 1)
 						{
-							cout << "(Owner) Input index manager: ";
+							cout << "(Owner)(Managers) Input index manager: ";
 							cin.clear();
 							while (cin.get() != '\n')
 								continue;
 						}
-						funk_managers.remove_managers(managers, index);
+						managers = funk_managers.remove_managers(managers, index);
 						count_managers--;
 						file_all_functions.save_elements(managers, count_managers, file_managers);
 					}
@@ -280,6 +285,7 @@ void main()
 				{
 					do
 					{
+						system("cls");
 						cout << "1 - watch Accounting" << endl;
 						cout << "2 - watch Managers" << endl;
 						cout << "3 - add Teams" << endl;
@@ -313,16 +319,17 @@ void main()
 						{
 							do
 							{
+								system("cls");
 								cout << "1 - input Teams" << endl;
 								cout << "2 - print Teams" << endl;
 								cout << "3 - remove Teams" << endl;
 								cout << "4 - end" << endl;
 
 								int select;
-								cout << "(Manager) input number: ";
+								cout << "(Manager)(Teams) input number: ";
 								while (!(std::cin >> select) || select < 1 || select > 4)
 								{
-									cout << "(Manager) input number: ";
+									cout << "(Manager)(Teams) input number: ";
 									cin.clear();
 									while (cin.get() != '\n')
 										continue;
@@ -330,16 +337,16 @@ void main()
 								if (select == 1)
 								{
 									int new_count;
-									cout << "(Manager) input count: ";
+									cout << "(Manager)(Teams) input count: ";
 									while (!(std::cin >> new_count))
 									{
-										cout << "(Manager) input count: ";
+										cout << "(Manager)(Teams) input count: ";
 										cin.clear();
 										while (cin.get() != '\n')
 											continue;
 									}
 									teams.resize(count_teams + new_count);
-									for (int i = 0; i < count_teams + new_count; i++)
+									for (int i = count_teams; i < count_teams + new_count; i++)
 									{
 										teams[i].input_teams(i);
 									}
@@ -356,15 +363,15 @@ void main()
 								if (select == 3)
 								{
 									int index;
-									cout << "(Manager) input index: ";
+									cout << "(Manager)(Teams) input index: ";
 									while (!(std::cin >> index))
 									{
-										cout << "(Manager) input index: ";
+										cout << "(Manager)(Teams) input index: ";
 										cin.clear();
 										while (cin.get() != '\n')
 											continue;
 									}
-									funk_teams.remove_teams(teams, index);
+									teams = funk_teams.remove_teams(teams, index);
 									count_teams--;
 									file_all_functions.save_elements(teams, count_teams, file_teams);
 								}
@@ -380,16 +387,17 @@ void main()
 						{
 							do
 							{
+								system("cls");
 								cout << "1 - input Control rooms" << endl;
 								cout << "2 - print Control rooms" << endl;
 								cout << "3 - remove Control rooms" << endl;
 								cout << "4 - end" << endl;
 
 								int select;
-								cout << "(Manager) input number: ";
+								cout << "(Manager)(Rooms) input number: ";
 								while (!(std::cin >> select) || select < 1 || select > 4)
 								{
-									cout << "(Manager) input number: ";
+									cout << "(Manager)(Rooms) input number: ";
 									cin.clear();
 									while (cin.get() != '\n')
 										continue;
@@ -397,16 +405,16 @@ void main()
 								if (select == 1)
 								{
 									int new_count;
-									cout << "(Manager) input count: ";
+									cout << "(Manager)(Rooms) input count: ";
 									while (!(std::cin >> new_count))
 									{
-										cout << "(Manager) input count: ";
+										cout << "(Manager)(Rooms) input count: ";
 										cin.clear();
 										while (cin.get() != '\n')
 											continue;
 									}
 									rooms.resize(count_rooms + new_count);
-									for (int i = 0; i < count_rooms + new_count; i++)
+									for (int i = count_rooms; i < count_rooms + new_count; i++)
 									{
 										rooms[i].input_rooms(i);
 									}
@@ -423,7 +431,7 @@ void main()
 								if (select == 3)
 								{
 									int index;
-									cout << "(Manager) input index: ";
+									cout << "(Manager)(Rooms) input index: ";
 									while (!(std::cin >> index))
 									{
 										cout << "(Manager) input index: ";
@@ -431,7 +439,7 @@ void main()
 										while (cin.get() != '\n')
 											continue;
 									}
-									funk_control_rooms.remove_rooms(rooms, index);
+									rooms = funk_control_rooms.remove_rooms(rooms, index);
 									count_rooms--;
 									file_all_functions.save_elements(rooms, count_rooms, file_control_rooms);
 								}
@@ -454,6 +462,7 @@ void main()
 							{
 								do
 								{
+									system("cls");
 									cout << "1 - watch Control rooms" << endl;
 									cout << "2 - watch Teams" << endl;
 									cout << "3 - watch Aircrafts" << endl;
@@ -518,8 +527,9 @@ void main()
 											{
 												for (int i = 0; i < funk_aircrafts.number_aircrafts; i++)
 												{
-													funk_teams.remove_teams(teams,i);
-												}count_teams = teams.size();
+													teams = funk_teams.remove_teams(teams,i);
+													count_teams--;
+												}
 												file_all_functions.save_elements(teams, count_teams, file_teams);
 
 											
@@ -532,10 +542,6 @@ void main()
 
 
 												funk_aircrafts.remove_aircrafts();
-											}
-											if (select == 2)
-											{
-												continue;
 											}
 										}
 										else
