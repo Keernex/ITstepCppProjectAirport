@@ -84,6 +84,8 @@ void main()
 		funk_customs.input_customs(funk_parking.occupied_spaces);
 		funk_recreation_hall.input_recreation_hall(funk_parking.occupied_spaces);
 
+		funk_aircrafts.order_aircrafts();
+
 
 		do
 		{
