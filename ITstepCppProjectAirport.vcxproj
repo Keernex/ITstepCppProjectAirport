@@ -135,7 +135,7 @@
     <ClCompile Include="recreation_hall.cpp" />
     <ClCompile Include="managers.cpp" />
     <ClCompile Include="control_room.cpp" />
-    <ClCompile Include="aircraft.cpp" />
+    <ClCompile Include="aircrafts.cpp" />
     <ClCompile Include="file_all_functions.cpp" />
     <ClCompile Include="teams.cpp" />
     <ClCompile Include="Use_case.cpp" />
@@ -143,7 +143,7 @@
   <ItemGroup>
     <ClInclude Include="customs.h" />
     <ClInclude Include="control_room.h" />
-    <ClInclude Include="aircraft.h" />
+    <ClInclude Include="aircrafts.h" />
     <ClInclude Include="file_all_functions.h" />
     <ClInclude Include="teams.h" />
     <ClInclude Include="Use_case.h" />

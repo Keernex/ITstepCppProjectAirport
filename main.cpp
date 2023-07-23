@@ -1,16 +1,15 @@
-#include "file_all_functions.h"
 #include <conio.h>
+#include "file_all_functions.h"
 
 void main()
 {
 	FileAllFunctions file_all_functions;
 	
-	
-	
+
 	Accounting funk_accounting;
 	string file_accounting = "accounting.bin";
 	vector<Accounting> accounting;
-	int count_accounting = 1;
+	//int count_accounting = 1;
 
 
 	Managers funk_managers;
@@ -133,7 +132,7 @@ void main()
 					{
 						int number;
 						cout << "(Owner) input number: ";
-						while (!(std::cin >> select) || select < 1 || select > 3)
+						while (!(std::cin >> number) || number < 1 || number > 3)
 						{
 							cout << "(Owner) input number: ";
 							cin.clear();

@@ -1,7 +1,7 @@
 #include "managers.h"
 #include "control_room.h"
 
-#include "aircraft.h"
+#include "aircrafts.h"
 #include "teams.h"
 
 #include "customs.h"
@@ -9,6 +9,8 @@
 #include "recreation_hall.h"
 #include "shops.h"
 
+#ifndef ACCOUNTING_H
+#define ACCOUNTING_H
 
 struct Accounting
 {
@@ -28,3 +30,5 @@ struct Accounting
 	template<typename T>
 	int counting_money(vector<T> items);
 };
+
+#endif

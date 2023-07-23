@@ -5,7 +5,7 @@
 #include "managers.h"
 #include "control_room.h"
 
-#include "aircraft.h"
+#include "aircrafts.h"
 #include "teams.h"
 
 #include "customs.h"
@@ -13,6 +13,8 @@
 #include "recreation_hall.h"
 #include "shops.h"
 
+#ifndef FILE_ALL_FUNCTIONS_H
+#define FILE_ALL_FUNCTIONS_H
 
 struct FileAllFunctions
 {
@@ -32,3 +34,6 @@ struct FileAllFunctions
 	template<typename T>
 	bool load_elements(vector<T> items, int& count, string filename);
 };
+
+
+#endif

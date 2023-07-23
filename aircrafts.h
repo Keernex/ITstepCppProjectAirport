@@ -1,5 +1,8 @@
 #include "lib.h"
 
+#ifndef AIRCRAFTS_H
+#define AIRCRAFTS_H
+
 struct Aircrafts
 {
 	int number_aircrafts;
@@ -11,3 +14,6 @@ struct Aircrafts
 	void print_aircrafts();
 	void remove_aircrafts();
 };
+
+
+#endif

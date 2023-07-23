@@ -1,5 +1,8 @@
 #include "lib.h"
 
+#ifndef TEAMS_H
+#define TEAMS_H
+
 struct Teams
 {
 	bool ready_work;
@@ -12,3 +15,4 @@ struct Teams
 	vector<Teams> remove_teams(vector<Teams> teams, int index);
 };
 
+#endif

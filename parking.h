@@ -1,5 +1,8 @@
 #include "lib.h"
 
+#ifndef PARKING_H
+#define PARKING_H
+
 struct Parking
 {
 	int spaces;
@@ -13,7 +16,7 @@ struct Parking
 };
 
 
-
+#endif
 
 
 

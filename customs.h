@@ -1,5 +1,7 @@
 #include "lib.h"
 
+#ifndef CUSTOMS_H
+#define CUSTOMS_H
 
 struct Customs
 {
@@ -10,3 +12,4 @@ struct Customs
 	void print_customs();
 };
 
+#endif

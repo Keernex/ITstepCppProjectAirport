@@ -108,7 +108,7 @@
     <ClCompile Include="teams.cpp">
       <Filter>Domain\models\Administration\Managers\teams</Filter>
     </ClCompile>
-    <ClCompile Include="aircraft.cpp">
+    <ClCompile Include="aircrafts.cpp">
       <Filter>Domain\models\Administration\Control_room\aircraft</Filter>
     </ClCompile>
     <ClCompile Include="file_all_functions.cpp">
@@ -146,7 +146,7 @@
     <ClInclude Include="teams.h">
       <Filter>Domain\models\Administration\Managers\teams</Filter>
     </ClInclude>
-    <ClInclude Include="aircraft.h">
+    <ClInclude Include="aircrafts.h">
       <Filter>Domain\models\Administration\Control_room\aircraft</Filter>
     </ClInclude>
     <ClInclude Include="file_all_functions.h">

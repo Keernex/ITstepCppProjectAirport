@@ -1,5 +1,8 @@
 #include "lib.h"
 
+#ifndef MANAGERS_H
+#define MANAGERS_H
+
 struct Managers
 {
 	string name;
@@ -16,7 +19,7 @@ struct Managers
 	vector<Managers> remove_managers(vector<Managers> managers, int index);
 };
 
-
+#endif
 
 
 

@@ -1,5 +1,7 @@
 #include "lib.h"
 
+#ifndef RECREATION_HALL_H
+#define RECREATION_HALL_H
 
 struct RecreationHall
 {
@@ -11,7 +13,7 @@ struct RecreationHall
 };
 
 
-
+#endif
 
 
 
